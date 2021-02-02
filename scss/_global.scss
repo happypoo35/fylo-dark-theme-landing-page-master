@@ -1,0 +1,137 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pad {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.wrapper {
+  width: min(1280px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+
+  &.features {
+    width: min(880px, 100%);
+  }
+
+  &.productive {
+    width: min(1230px, 100%);
+  }
+
+  &.testimonials {
+    width: min(1160px, 100%);
+  }
+
+  &.cta {
+    width: min(860px, 100%);
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: white;
+  background: $Dark-Blue-intro-and-email;
+}
+
+h1,
+h2,
+h3,
+button,
+pre {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.004em;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+  &.productive-title {
+    font-size: clamp(1.125rem, 4.5vw, 2.5rem);
+  }
+}
+
+h2 {
+  font-size: clamp(1.125rem, 4vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+}
+
+p,
+small,
+.links a {
+  color: $Dim-White;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.hero p {
+  font-size: clamp(0.875rem, 3vw, 1.25rem);
+}
+
+.productive p,
+.location p {
+  font-size: 1rem;
+}
+
+.testimonials p {
+  font-size: clamp(0.625rem, 2vw, 0.875rem);
+  letter-spacing: 0.034em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links a {
+  font-size: 1rem;
+  @extend %tr;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+nav .links a {
+  font-size: clamp(0.75rem, 3vw, 1rem);
+}
+
+i {
+  color: white;
+}
+
+footer i {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.052em;
+}
+
+small {
+  font-size: 0.5rem;
+}
+
+*::placeholder {
+  font-size: 0.75rem;
+  color: rgba(black, 0.3);
+}
