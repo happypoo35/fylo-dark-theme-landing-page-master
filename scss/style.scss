@@ -154,10 +154,10 @@ main {
 
     .user {
       display: flex;
+      align-items: center;
       gap: 0.5rem;
 
       img {
-        max-width: 100%;
         width: 1.625rem;
         border-radius: 50%;
       }
